@@ -1,10 +1,54 @@
 {
-  "locations" : [
-    {"location": "Tokyo", "population": 13350000, "area": "842mi^2"},
-    {"location": "New York", "population": 8400000, "area": "469mi^2"},
-    {"location": "Minneapolis", "population": 400070, "area": "58.4mi^2"},
-    {"location": "Paris", "population": 2200000, "area": "40.7mi^2"},
-    {"location": "Atlanta", "population": 447841, "area": "132.4mi^2"}
-
+  "firsts" : [
+    {"first": "Morbid"},
+    {"first": "Apathetic"},
+    {"first": "Discombobulated"},
+    {"first": "Wretched"},
+    {"first": "Repulsed"},
+    {"first": "Eager"},
+    {"first": "Waspish"},
+    {"first": "Crotchety"},
+    {"first": "Cantankerous"},
+    {"first": "Gloomy"},
+    {"first": "Blue"},
+    {"first": "Euphoric"},
+    {"first": "Ecstatic"},
+    {"first": "Beloved"},
+    {"first": "Lustful"},
+    {"first": "Adoring"},
+    {"first": "Ambivalent"},
+    {"first": "Iron"},
+    {"first": "Dark"},
+    {"first": "Fallen"}
+  ],
+  "seconds" : [
+    {"second": "before"},
+    {"second": "after"},
+    {"second": "+"},
+    {"second": "|"},
+    {"second": ""}
+  ],
+  "thirds" : [
+    {"third": "Melancholy"},
+    {"third": "Misery"},
+    {"third": "Love"},
+    {"third": "Heaven"},
+    {"third": "Hell"},
+    {"third": "Pity"},
+    {"third": "Delight"},
+    {"third": "Despair"},
+    {"third": "War"},
+    {"third": "Fire"},
+    {"third": "Winter"},
+    {"third": "Nightfall"},
+    {"third": "Autumn"},
+    {"third": "Force"},
+    {"third": "Doom"},
+    {"third": "Funeral"},
+    {"third": "Fear"},
+    {"third": "Ash"},
+    {"third": "Raven"},
+    {"third": "Wasp"},
+    {"third": "Forest"}
   ]
 }

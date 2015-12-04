@@ -14,55 +14,25 @@
 //Response -
 
 //
-
-var cityData = null;
-var cityHtml = null;
+var fortuneCookies = null;
 
 $(document).ready(function(){
-    console.log(cityData, cityHtml);
-    $('#get-info-btn').on('click',function(){
+    $('#button').on('click',function(){
 
-        $('#more-stuff').empty();
+        $('.here').empty();
 
+        $.get('data.json', function(data) {
+            fortuneCookies = data;
 
+            var i = Math.floor((Math.random() * fortuneCookies.firsts.length-1) + 1);
+            var first = fortuneCookies.firsts[i].first;
+            var i = Math.floor((Math.random() * fortuneCookies.seconds.length-1) + 1);
+            var second = fortuneCookies.seconds[i].second;
+            var i = Math.floor((Math.random() * fortuneCookies.thirds.length-1) + 1);
+            var third = fortuneCookies.thirds[i].third;
 
-                $.get('location.html', function(data){
-                    cityData = data;
-                    $("#more-stuff").append(cityData);
-                });
-
-                $.get('data.json', function(data) {
-
-                    cityHtml = data;
-
-                    for(var i = 0; i < cityHtml.locations.length; i++) {
-
-                        var cityName = cityHtml.locations[i].location;
-                        var people = cityHtml.locations[i].population;
-                        var citySize = cityHtml.locations[i].area;
-
-                        console.log("It worked");
-                        $(".location-container").prepend("<div class='well col-md-4'><p>City: " + cityName + "</p><p>Population: " + people + "</p><p>Area: " + citySize + "</p><button class='btn btn-info'>Remove</button></div>").hide().fadeIn("slow");
-                    }
-
-                });
-
-
-        //if(cityData === null){
-        //    $.get('data.json', function(data){
-        //        console.log("This also worked");
-        //        cityData = data;
-        //        var firstCity = data.locations[3].location;
-        //
-        //    });
-        //} else {
-        //    console.log(cityData.locations[3].population);
-        //    console.log("You already got the data");
-        //}
-
-    });
-
-    $("#more-stuff").on('click', 'button', function(){
-       $(this).parent().fadeOut("slow");
+            console.log("It worked");
+            $(".here").append("<div><p>" + first + " " + second + " " + third + "</p></div>").hide().fadeIn("slow");
+        });
     });
 });
